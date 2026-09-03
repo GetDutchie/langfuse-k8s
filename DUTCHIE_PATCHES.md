@@ -11,6 +11,7 @@ Adds `clickhouse.keeper.settings` pass-through to
 
 - Upstream proposal: https://github.com/langfuse/langfuse-k8s/pull/415
 - Internal consumer: `GetDutchie/argocd-manifests`, stable Langfuse values
+- Helm repository: https://getdutchie.github.io/langfuse-k8s
 - Retirement condition: switch the consumer back to the first upstream chart
   release containing the setting, then archive or delete this fork.
 
