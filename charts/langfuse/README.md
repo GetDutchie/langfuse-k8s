@@ -1,6 +1,6 @@
 # langfuse
 
-![Version: 2.1.0](https://img.shields.io/badge/Version-2.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.24.0](https://img.shields.io/badge/AppVersion-4.24.0-informational?style=flat-square)
+![Version: 2.1.0-dutchie.1](https://img.shields.io/badge/Version-2.1.0--dutchie.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.24.0](https://img.shields.io/badge/AppVersion-4.24.0-informational?style=flat-square)
 
 Open source LLM engineering platform - LLM observability, metrics, evaluations, prompt management.
 
@@ -60,6 +60,7 @@ Open source LLM engineering platform - LLM observability, metrics, evaluations, 
 | clickhouse.keeper.priorityClassName | string | `""` | PriorityClass for Keeper pods. |
 | clickhouse.keeper.replicas | int | `3` | Keeper replica count (must be odd: 1, 3, or 5). Use 3 for production HA. |
 | clickhouse.keeper.resources | object | `{"limits":{"memory":"1Gi"},"requests":{"cpu":"250m","memory":"256Mi"}}` | CPU/memory requests and limits for Keeper pods. |
+| clickhouse.keeper.settings | object | `{}` | Extra Keeper settings applied under the KeeperCluster `spec.settings` field. |
 | clickhouse.keeper.storage.accessModes[0] | string | `"ReadWriteOnce"` |  |
 | clickhouse.keeper.storage.className | string | `""` | StorageClass for Keeper PVCs. Leave empty to use the cluster default. |
 | clickhouse.keeper.storage.size | string | `"20Gi"` | Persistent volume size for each Keeper pod. |
